@@ -1,0 +1,50 @@
+type: collection.insomnia.rest/5.0
+schema_version: "5.1"
+name: User Service
+meta:
+  id: wrk_362b7127d1f349dc8310c973df851b6f
+  created: 1787327376525
+  modified: 1787327376525
+  description: ""
+collection:
+  - url: http://localhost:8082/auth/register
+    name: Auth Register
+    meta:
+      id: req_e0545d9b8ace41e083c12a4f6b201b00
+      created: 1787327393645
+      modified: 1787327428617
+      isPrivate: false
+      description: ""
+      sortKey: -1787327393645
+    method: POST
+    body:
+      mimeType: application/json
+      text: "{\r   \"email\": \"vishal@gmail.com\",\r   \"username\":
+        \"Vishal\",\r   \"password\": \"user\",\r   \"roles\":
+        [\r     \"BASIC_USER\"\r   ]\r }"
+    headers:
+      - name: accept
+        value: "*/*"
+      - name: Content-Type
+        value: application/json
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+cookieJar:
+  name: Default Jar
+  meta:
+    id: jar_5a8b07eacf7f42217a3c6fe78f4025ae3031415e
+    created: 1787327376556
+    modified: 1787327376556
+environments:
+  name: Base Environment
+  meta:
+    id: env_5a8b07eacf7f42217a3c6fe78f4025ae3031415e
+    created: 1787327376553
+    modified: 1787327376553
+    isPrivate: false
